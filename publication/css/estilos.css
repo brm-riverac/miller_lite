@@ -63,8 +63,9 @@ h5 {
 h6 {
 	font-size: 2rem;
 }
-p {
+p, label {
 	font-family: 'robotoregular';
+	color:#fff;
 }
 /************* Color Gradients***********/
 .millerOfficialGrad {
@@ -137,4 +138,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0091d7', end
 .validationWrapper {
 	width: 100%;
 	height: 100%;
+}
+.validationWrapper div{
+	height: 100%;}
+.validationWrapper div img{
+	position: fixed;
+bottom: 0px;
+height: 100%;
+width: auto;
+margin-left: 2%;
+}
+
+.validationDate{
+	width: 30%;
+text-align: center;
+display: inline-block;
 }
