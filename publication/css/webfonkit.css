@@ -2,14 +2,22 @@
 
 @font-face {
 	font-family: 'Knockout';
-	src: url('../fonts/Knockout-HTF47-Bantamweight.eot?#iefix') format('embedded-opentype'), url('../fonts/Knockout-HTF47-Bantamweight.woff') format('woff'), url('../fonts/Knockout-HTF47-Bantamweight.ttf') format('truetype'), url('../fonts/Knockout-HTF47-Bantamweight.svg#Knockout-HTF47-Bantamweight') format('svg');
+	src: url('../fonts/Knockout-HTF47-Bantamweight.eot');
+    src: url('../fonts/Knockout-HTF47-Bantamweight.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/Knockout-HTF47-Bantamweight.woff') format('woff'), 
+    url('../fonts/Knockout-HTF47-Bantamweight.ttf') format('truetype'), 
+    url('../fonts/Knockout-HTF47-Bantamweight.svg#Knockout-HTF47-Bantamweight') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'robotoregular';
 	src: url('../fonts/roboto-regular-webfont.eot');
-	src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/roboto-regular-webfont.woff2') format('woff2'),  url('../fonts/roboto-regular-webfont.woff') format('woff'),  url('../fonts/roboto-regular-webfont.ttf') format('truetype'),  url('../fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+	src: url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),  
+    url('../fonts/roboto-regular-webfont.woff2') format('woff2'),  
+    url('../fonts/roboto-regular-webfont.woff') format('woff'),  
+    url('../fonts/roboto-regular-webfont.ttf') format('truetype'),  
+    url('../fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -36,16 +44,14 @@
 }
 
 
-
-
 @font-face {
-    font-family: 'akzidenz-grotesk_bq_condensBd';
-    src: url('../fonts/akzidenzgrotesk-boldcond-webfont.eot');
-    src: url('../fonts/akzidenzgrotesk-boldcond-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/akzidenzgrotesk-boldcond-webfont.woff2') format('woff2'),
-         url('../fonts/akzidenzgrotesk-boldcond-webfont.woff') format('woff'),
-         url('../fonts/akzidenzgrotesk-boldcond-webfont.ttf') format('truetype'),
-         url('../fonts/akzidenzgrotesk-boldcond-webfont.svg#akzidenz-grotesk_bq_condensBd') format('svg');
+    font-family: 'akzidenz-cond';
+    src: url('../fonts/akzidenzgrotesk-mediumcondalt-webfont.eot');
+    src: url('../fonts/akzidenzgrotesk-mediumcondalt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/akzidenzgrotesk-mediumcondalt-webfont.woff2') format('woff2'),
+         url('../fonts/akzidenzgrotesk-mediumcondalt-webfont.woff') format('woff'),
+         url('../fonts/akzidenzgrotesk-mediumcondalt-webfont.ttf') format('truetype'),
+         url('../fonts/akzidenzgrotesk-mediumcondalt-webfont.svg#akzidenz-grotesk_bq_condensMd') format('svg');
     font-weight: normal;
     font-style: normal;
 
