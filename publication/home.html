@@ -64,21 +64,43 @@
     </div>    
     </div>
     <!-- fin parte superior -->
-     <!-- Inicio Barra Azul -->
-     <div class="midBar millerOfficialGrad">
+    <!-- desplegable arriba -->
+    <div class="desp1 white">
+      <div class="row">
+       
+
+      
+
+      </div>
+    </div>
+    
+
+    <!-- Inicio Barra Azul -->
+    <div class="midBar millerOfficialGrad">
      	<div class="row">
      		<div >
         		<h4>¡Queda muy poco tiempo!</h4>
             	<p>Si nos cuentas lo que quieres hacer, invitas a tus amigos a votar y tu idea tiene ese algo especial, Miller Lite podría hacerlo realidad.</p>
        		</div>
        		<nav>
-        		<a class="participarBTN redGrad ">¡Quiero participar!</a>
-            	<a class="comoParticiparBTN blueGrad"><img src="images/iconoEngrane.png"/></a>
+          
+        		<button  class="tog1 participarBTN redGrad ">¡Quiero participar!</button>
+            <button  class="tog2 comoParticiparBTN blueGrad"><img src="images/iconoEngrane.png"/></button>
         	</nav>
             
         </div>
      </div>
 
+
+       <!-- desplegable abajo -->
+    <div class="desp2 white">
+      <div class="row">
+       
+
+      
+
+      </div>
+    </div>
 
 
 
@@ -336,6 +358,20 @@
        <div class="legalesFooter"><div class="m18"></div> <p>Prohíbase el expendio de bebidas embriagantes a menores de edad.  El exceso de alcohol es perjudicial para la salud.</p></div>
     </footer>
 <script src="js/clock.js"></script>
+<script>
+      $(document).ready(function(){
+       $(".tog1").click(function(){
+           $(".desp1").toggle(500);
+       });
+      });
+</script>
+<script>
+      $(document).ready(function(){
+       $(".tog2").click(function(){
+           $(".desp2").toggle(500);
+       });
+      });
+</script>
 
 </body>
 </html>
