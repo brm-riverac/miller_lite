@@ -321,25 +321,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00337e', end
 }
 
 /*galeria*/
-.pd_s{margin-bottom:3% !important; }
-
-.gallery{ 
-
-  width: 100%;
-  height: 350px;
+.pd_s{
+	margin-bottom:3% !important;
+	}
+.cuboGaleria{
+	padding: 0px;
+	width: 33%;
+	display: inline-block;
+	vertical-align: top;
 }
-.cuboGaleria{}
+.cuboGaleria .gallery{ 
+	width: 100%;
+	height: 350px;
+	position: relative;
+}
 
-
-.ft1{background: url("../images/galeria/miller3.jpg")center top no-repeat;}
-.ft2{background: url("../images/galeria/miller6.jpg")center top no-repeat;}
-.ft3{background: url("../images/galeria/miller8.jpg")center top no-repeat;}
-.ft4{background: url("../images/galeria/miller13.jpg")center top no-repeat;}
-.ft5{background: url("../images/galeria/miller14.jpg")center top no-repeat;}
-.ft6{background: url("../images/galeria/miller16.jpg")center top no-repeat;}
-.ft7{background: url("../images/galeria/miller21.jpg")center top no-repeat;}
-.ft8{background: url("../images/galeria/miller22.jpg")center top no-repeat;}
-.ft9{background: url("../images/galeria/miller24.jpg")center top no-repeat;}
+.cuboGaleria .gallery .userGaleryimg{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
 
 
 
@@ -353,6 +354,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00337e', end
   color: #01204d;
   padding: 2% 0 0 2%;
   background: url("../images/pix.png")repeat;
+  position: absolute;
+	top: 0px;
   
 }
 
@@ -365,6 +368,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00337e', end
   background-color: #fff;
   margin: 94% 0 0 0;
   background: url("../images/pix.png")repeat;
+  position:absolute;
+  bottom:0;
 }
 
 .numb {
