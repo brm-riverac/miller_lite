@@ -14,6 +14,7 @@
 				// Instantiate a coutdown FlipClock
 			    var clock = $('.clock').FlipClock(7200 * 24 * 3, {
 		        clockFace: 'DailyCounter',
+		        language:'es-es',
 		        countdown: true,
 		        showSeconds: false
 	            });

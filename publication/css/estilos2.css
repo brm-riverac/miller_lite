@@ -13,12 +13,12 @@
 
 .bg-head {
   background: url("../images/bg_people.png")left top no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
   height: 635px;
 }
 .ring {
   background: url("../images/anillos.png")center center no-repeat;
-  background-size: contain;
+  background-size: auto 100%;
   height: 635px;
 
 }
@@ -27,8 +27,9 @@
 	margin:6% 0 0 0;
 }
 .bodcopy p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.2;
+  width: 98%;
 }
 
 .reloj{
@@ -36,8 +37,8 @@
   margin: 6% 0 2% 0;
 }
 
-.tit-1{
-  font-size: 4.5rem;
+.tit-1 {
+  font-size: 4.3rem;
   line-height: 4rem;
 }
 
@@ -57,3 +58,87 @@
   margin: -69% 0 0 0;
   float: right;
 }
+
+
+/*galeria*/
+.pd_s{margin-bottom:3% !important; }
+
+.gallery{ 
+  background-size: auto 100%;
+  width: 100%;
+  height: 390px
+}
+
+.ft1{background: url("../images/galeria/miller3.jpg")center top no-repeat;}
+.ft2{background: url("../images/galeria/miller6.jpg")center top no-repeat;}
+.ft3{background: url("../images/galeria/miller8.jpg")center top no-repeat;}
+.ft4{background: url("../images/galeria/miller13.jpg")center top no-repeat;}
+.ft5{background: url("../images/galeria/miller14.jpg")center top no-repeat;}
+.ft6{background: url("../images/galeria/miller16.jpg")center top no-repeat;}
+.ft7{background: url("../images/galeria/miller21.jpg")center top no-repeat;}
+.ft8{background: url("../images/galeria/miller22.jpg")center top no-repeat;}
+.ft9{background: url("../images/galeria/miller24.jpg")center top no-repeat;}
+
+
+
+
+
+
+.wish {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  color: #01204d;
+  padding: 2% 0 0 2%;
+  background: url("../images/pix.png")repeat;
+  
+}
+
+.wish h4{color:#01204d; }
+
+.count {
+  width: 100%;
+  display: inline-block;
+  height: 45px;
+  background-color: #fff;
+  margin: 94% 0 0 0;
+  background: url("../images/pix.png")repeat;
+}
+
+.numb {
+  float: left;
+  width: 50%;
+  height: 45px;
+  color: #005192;
+  font-family: 'akzidenz-cond', impact, arial, sans-serif;
+  font-size: 5rem;
+  line-height: 2.2rem;
+  padding: 0 0 0 3%;
+  text-shadow: 8px -4px 25px rgba(255, 255, 255, 1);
+}
+
+
+.count a {
+  float: right;
+  width: 50%;
+  height: 45px;
+  text-align: right;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  padding: 0 3% 0 0;
+  color:#01204d;
+  font-family: 'akzidenz-cond', impact, arial, sans-serif;
+}
+.count span {
+color:#005192;
+
+}
+.ya{
+	color:#F7D000 !important;
+	text-shadow: 8px -4px 25px rgba(255, 255, 255, 1);
+}
+
+
+
+
+
