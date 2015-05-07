@@ -10,9 +10,14 @@
 	<title>Miller Lite - Colombia #HazMadeLoQueteGusta</title>
 	<link rel="stylesheet" href="css/vendor/foundation.css" />
     <link rel="stylesheet" href="css/estilos.css"/>
+    <link rel="stylesheet" href="css/estilos2.css"/>
     <link rel="stylesheet" href="css/webfonkit.css"/>
     <link rel="stylesheet" href="css/mainqueries.css"/>
+    <link rel="stylesheet" href="css/vendor/flipclock.css"/>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/flipclock.min.js"></script>
     <!--[if gte IE 9]> <style type="text/css">.gradient {filter: none;}</style><![endif]-->
      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,13 +29,15 @@
 
 <body>
 	<div class="pageWrapper gradBG1">
-    <header class="row">
+    <div class="bg-head">
+    <div class="ring">
+    <header class="row head_ml">
     <!-- parte1 -->
     <div class="small-12 medium-6 large-6 columns">
-    <div class="brd-cmp">
-    <div class="tapa"></div>
-    <img src="svg/date.svg" title="20 de junio #HazMásDeLoQueTuGusta" class="white"/>
-    </div>
+     <div class="brd-cmp">
+      <img src="svg/date.svg" title="20 de junio #HazMásDeLoQueTuGusta" class="logo white"/>
+      <div class="tapa"></div>
+     </div>
     </div>
 
 
@@ -39,20 +46,24 @@
     
     <!-- parte2 -->
     <div class="small-12 medium-6 large-6 columns">
-    <h2>día oficial de<br>
-    #HazMásDeLoQueTeGusta</h2>
+    <h2 class="tit-1">DÍA OFICIAL DE<br>
+    #MásDeLoQueMeGusta</h2>
     
     <div class="reloj">
-        
+    <div class="clock" style="margin:2em;"></div>  
     </div>
     
+    <div class="bodcopy">
     <p>¿Y por qué no un día para hacer eso que siempre has querido?</p>
     <p>Este 20 de junio arriésgate a hacerlo porque la vida es más lite cuando se dejas las excusas a un lado y te atreves a vivir.</p>
+    </div>
     </div>
 
 
     </header>
-
+    </div>    2
+    </div>
+    <!-- fin parte superior -->
     
 
 
@@ -63,5 +74,6 @@
 
 
     </div>
+    <script src="js/clock.js"></script>
 </body>
 </html>

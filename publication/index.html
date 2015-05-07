@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/webfonkit.css"/>
     <link rel="stylesheet" href="css/mainqueries.css"/>
     <script src="js/vendor/modernizr.js"></script>
+    
     <!--[if gte IE 9]> <style type="text/css">.gradient {filter: none;}</style><![endif]-->
      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,33 +30,32 @@
             <div class="small-12 medium-6 columns">
             
             
-            <form>
-            <h2>BIENVENIDOS A MILLER LITE COLOMBIA</h2>
+            <form class="validationDateWrapper">
+            <h1>BIENVENIDOS A </br>MILLER LITE COLOMBIA</h1>
             
-            <p>Para ingresar debes ser mayor de edad, por favor escribe tu fecha de nacimiento.</p>
+            <h6>Para ingresar debes ser mayor de edad, por favor escribe tu fecha de nacimiento.</h6>
             
             <div>
-      			<label class="validationDate">Select Box
-        			<select >
-          				<option value="husker">Día</option>
-          				
-        			</select>
-      			</label>
-                
-                <label class="validationDate">Select Box
-        			<select >
-          				<option value="husker">Día</option>
-          				
-        			</select>
-      			</label>
-                
-                <label class="validationDate">Select Box
-        			<select >
-          				<option value="husker">Día</option>
-          				
-        			</select>
-      			</label>
+            	<label class="validationDate">Día
+        				<input type="text" placeholder="DD" />
+     			</label>
+                <label class="validationDate">Mes
+        				<input type="text" placeholder="MM" />
+     			</label>
+                <label class="validationDate">Año
+        				<input type="text" placeholder="AAAA" />
+     			</label>
+      	
     		</div>
+            <div class="avisoValidador">
+            	<div class="cheker">
+    				<label class="checkbox inline" for="checkTerms-0"><p>Recordar mis datos.</p>	
+      					<input type="checkbox" name="checkTerms" id="checkTerms-0" value="Sí">
+   					</label>
+  				</div>
+            
+            <p>Al suministrar tu edad, estás dando tu consentimiento expreso al dueño de la página para recopilar cierta información no personal y almacenar información en tu computador en la forma de "cookie" o un archivo similar.</p>
+            </div>
             </form>
             </div>
         </div>

@@ -1,0 +1,59 @@
+/*---------------------------------- home -----------------------------*/
+
+/*cabecera*/
+.logo{height:318px;}
+
+.white{color:#fff;}
+
+.head_ml{
+	height:741px;
+	padding-top: 109px;
+	
+}
+
+.bg-head {
+  background: url("../images/bg_people.png")left top no-repeat;
+  background-size: contain;
+  height: 635px;
+}
+.ring {
+  background: url("../images/anillos.png")center center no-repeat;
+  background-size: contain;
+  height: 635px;
+
+}
+
+.bodcopy{
+	margin:6% 0 0 0;
+}
+.bodcopy p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.reloj{
+  height: 9rem;
+  margin: 6% 0 2% 0;
+}
+
+.tit-1{
+  font-size: 4.5rem;
+  line-height: 4rem;
+}
+
+.brd-cmp {
+  background: url("../images/pico_botella_miller.png")center bottom no-repeat;
+  width: 100%;
+  height: 526px;
+  background-size: 85%;
+}
+
+.tapa {
+  background: url("../images/tapa_miller.png")center bottom no-repeat;
+  width: 36%;
+  height: 150px;
+  background-size: 100%;
+  /* background-color: aliceblue; */
+  margin: -69% 0 0 0;
+  float: right;
+}
