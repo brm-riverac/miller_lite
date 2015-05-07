@@ -23,8 +23,8 @@ html, body, .pageWrapper {
 	background-color: rgba(4,18,45,1);
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'akzidenz-cond',impact,arial, sans-serif;
-	color:#fff;
+	font-family: 'akzidenz-cond', impact, arial, sans-serif;
+	color: #fff;
 	letter-spacing: 0.1rem;
 }
 h1 {
@@ -45,15 +45,19 @@ h4 {
 }
 h5 {
 	font-size: 2.125rem;
-	  line-height: 1.95rem;
+	line-height: 1.95rem;
 }
 h6 {
 	font-size: 2rem;
 	line-height: 1.85rem;
 }
-p,label {
-	font-family: 'robotoregular';
-	color:#fff;
+
+p {
+	margin: 0;
+}
+p, label {
+    font-family: 'robotoregular';
+	color: #fff;
 	line-height: 1.4rem;
 }
 
@@ -125,26 +129,52 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00337e', end
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0091d7', endColorstr='#005793', GradientType=0 );
 }
 /*---------------------------------- Validador De Edad -----------------------------*/
+.beerSmoke {
+	position: fixed;
+	bottom: 0px;
+	width: 55%;
+	z-index: 0;
+}
+.beerSmoke img {
+	width: 100%;
+	height: auto;
+}
 .validationWrapper {
 	width: 100%;
+}
+.validationWrapper div {
 	height: 100%;
 }
-.validationWrapper div{
-	height: 100%;}
-.validationWrapper div img{
-	position: fixed;
-bottom: 0px;
-height: 100%;
-width: auto;
-margin-left: 2%;
+.validationDateWrapper {
+	margin-top: 32%;
 }
-.validationDateWrapper{
+.logoMillerLite {
+	/**MEDIA**/display: none;
+	text-align: center;
+	padding: 2rem;
 }
-.validationDateWrapper p{
-	 font-family: 'roboto_condregular';
+.logoMillerLite img {
+	display: inline-block;
+	height: 100%;
+	width: auto;
 }
-.validationDate{
+.validationDateWrapper p {
+	font-family: 'roboto_condregular';
+}
+.validationDateWrapper h1, .validationDateWrapper h2 {
+	margin-bottom: 1rem;
+}
+.diasWrapper {
+	text-align: justify;
+}
+.diasWrapper:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+.diasWrapper .validationDate {
 	width: 30%;
+<<<<<<< HEAD
 text-align: center;
 display: inline-block;
 font-size: 1rem;
@@ -177,3 +207,93 @@ font-size: 1rem;
     text-align: justify;
 	color: #01214D;}
 
+=======
+	text-align: center;
+	display: inline-block;
+	font-size: 1rem;
+	white-space: nowrap;
+}
+.diasWrapper .validationDate select {
+	font-family: 'akzidenz-cond', impact, arial, sans-serif;
+	font-size: 4rem;
+	height: 5rem;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+	padding-left: 30%;
+}
+.diasWrapper .validationDate p {
+	margin: 0;
+}
+.diasWrapper .validationDate input {
+	text-align: center;
+	font-family: 'akzidenz-cond', impact, arial, sans-serif;
+	font-size: 4rem;
+	height: 5rem;
+	margin: 0;
+}
+.avisoValidador {
+	background-color: rgba(212,220,231,0.4);
+	padding: 0.6rem;
+}
+.avisoValidador p {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	line-height: 0.95rem;
+	text-align: justify;
+	color: #01214D;
+	margin: 0;
+}
+.avisoValidador * {
+	margin: 0;
+}
+.millerTimeSmoke {
+	width: 100%;
+	margin-top: -35%;
+}
+.millerTimeSmoke img {
+	width: 100%;
+	height: auto;
+}
+/*------------------------ Footer -----------------------*/
+footer {
+	bottom: 0;
+	display: block;
+	background-color: rgba(0,0,0,0.8);
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	padding: 0rem 0rem 0.5rem;
+}
+footer nav {
+	max-width: 960px;
+	display: inline-block;
+	font-size: 0.8rem;
+	color: #fff;
+}
+footer nav a {
+	color: #fff;
+	margin: 0 0.5rem;
+}
+footer nav a:hover {
+	color: #0093D9;
+}
+footer div {
+	width: 95%;
+	display: inline-block;
+	margin-top: 0.5rem;
+}
+footer div img {
+	display: inline-block;
+	vertical-align: top;
+}
+footer div p {
+	display: inline-block;
+	font-size: 0.7rem;
+	max-width: 85%;
+	vertical-align: top;
+	line-height: 1rem;
+}
+>>>>>>> 75c8d7930737c65db1f3f6a19f4d6d61aa4669d4
