@@ -206,7 +206,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05122e', end
 	margin: auto;
 	text-align:right;
 	margin: 0.2rem auto 0;
-<<<<<<< HEAD
+
 }
 .menuHeader .menuBTN{
 	background: none;
@@ -219,20 +219,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05122e', end
 .menuHeader .menuBTN:hover{
 	background-color: rgba(255, 255, 255, 0.2);
 }
-=======
-}
-.menuHeader .menuBTN{
-	background: none;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  vertical-align:middle;
-  position: relative;
-}
-.menuHeader .menuBTN:hover{
-	background-color: rgba(255, 255, 255, 0.2);
-}
->>>>>>> 5168354cb36f0c593c47f29cef9acb4bfc905525
+
 .menuHeader .menuBTN span{
 	position:absolute;
 	top: 0;
@@ -273,8 +260,7 @@ height: 35px;
 }
 .userTool .userName:hover{
 	color: #0093D9;
-<<<<<<< HEAD
-=======
+
 }
 
 /*---------------------------------- logg in Wrapper -------------------------------*/
@@ -309,7 +295,7 @@ height: 35px;
 }
 .showLogin .connectMin{
 	display:inline-block;
->>>>>>> 5168354cb36f0c593c47f29cef9acb4bfc905525
+
 }
 /*---------------------------------- logg in Wrapper -------------------------------*/
 .logginWrapper{
@@ -672,13 +658,12 @@ opacity:0;
 
 .wish {
   width: 100%;
-   50px;
   background-color: #fff;
   color: #01204d;
   padding: 2% 0 0 2%;
   background: url("../images/pix.png")repeat;
   position: absolute;
-	top: 0px;	 
+  top: 0px;	 
 }
 .insideStatusOpen + .cuboGaleria .gallery .wish{
 height:100%;
