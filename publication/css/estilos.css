@@ -64,7 +64,15 @@ p, label {
 	color: #fff;
 	line-height: 1.4rem;
 }
+/************** Transitions ***************/
+.trans1{
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s eas;
+transition: all 0.3s ease;
 
+}
 /************* Color Gradients***********/
 .millerOfficialGrad {
 	background: rgb(0,81,147);
@@ -121,6 +129,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0043c', end
 	background: -ms-linear-gradient(top, rgba(0,51,126,1) 0%, rgba(0,81,146,1) 100%);
 	background: linear-gradient(to bottom, rgba(0,51,126,1) 0%, rgba(0,81,146,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00337e', endColorstr='#005192', GradientType=0 );
+}
+
+.blueGrad:hover {
+	background: rgb(0,145,215);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI2JSIgc3RvcC1jb2xvcj0iIzAwOTFkNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDU3OTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, rgba(0,145,215,1) 6%, rgba(0,87,147,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(6%, rgba(0,145,215,1)), color-stop(100%, rgba(0,87,147,1)));
+	background: -webkit-linear-gradient(top, rgba(0,145,215,1) 6%, rgba(0,87,147,1) 100%);
+	background: -o-linear-gradient(top, rgba(0,145,215,1) 6%, rgba(0,87,147,1) 100%);
+	background: -ms-linear-gradient(top, rgba(0,145,215,1) 6%, rgba(0,87,147,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,145,215,1) 6%, rgba(0,87,147,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0091d7', endColorstr='#005793', GradientType=0 );
 }
 .blueGradB {
 	background: rgb(0,145,215);
@@ -322,19 +342,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00337e', end
 
 /*galeria*/
 .pd_s{
-	margin:0 auto 3% auto !important;
-	text-align: justify;
+	margin:0 auto !important;
+	/*text-align: justify;*/
 	width:98%;
-	background:red;
+	position:relative;
 	}
 	.statusXPUser{
 		width: 100%;
 position: relative;
-display: inline-block;
-background-color: #008000;
+display: inline;
 }
 .insideStatus{
-background-color: #FF6347;
+background-color: #0093D9;
 height: 100%;
 display: block;
 top: 0px;
@@ -342,8 +361,73 @@ bottom: 0px;
 position: absolute;
 margin-left: 33%;
 width: 0%;
-
+overflow: hidden;
 }
+.insideStatusOpen{
+	width:67%;
+	padding:1rem;
+}
+
+.insideStatus .textStatus{
+	margin-top: 5%;
+	}
+.insideStatus .textStatus *{
+	margin-bottom:1rem;
+}
+.insideStatus nav{
+	position:absolute;
+	bottom:0;
+	width:95%;
+	}
+.insideStatus nav button{
+	font-family: 'akzidenz-cond', impact, arial, sans-serif;
+	color: #fff;
+	letter-spacing: 0.1rem;
+	padding:0.3rem 2rem 0.1rem;
+	-webkit-box-shadow:2px 4px 3px 0 rgba(0,0,0,0.45);
+	box-shadow:2px 4px 3px 0 rgba(0,0,0,0.45);
+	font-size:2rem;
+	text-shadow: 0 3px 3px #001421;
+}
+
+.insideStatus nav .statusShare{
+	float: right;
+}
+.insideStatus nav .statusShare:after{
+	clear:both;
+}
+.insideStatus nav .statusShare h6{
+	display: inline-block;
+	vertical-align: middle;
+}
+.insideStatus nav .statusShare a{
+	display:inline-block;
+	vertical-align:middle;
+	width:43px;
+	height:44px;
+	background-image:url(../images/elementos.png);
+	cursor:pointer;
+} 
+.insideStatus nav .statusShare .facebookShare{
+	background-position:-26px 0px;
+	
+}
+.insideStatus nav .statusShare .twitterShare{
+	background-position:-79px 0px;
+}
+.insideStatus nav .statusShare .facebookShare:hover{
+	background-position:-26px -45px;
+	
+}
+.insideStatus nav .statusShare .twitterShare:hover{
+	background-position:-79px -45px;
+}
+.showStatusbar{
+	display:inline-block;
+	position:absolute;
+	left:0;
+	z-index: 100;
+	}
 .cuboGaleria{
 	padding: 0px;
 	width: 33%;
@@ -377,31 +461,31 @@ width: 0%;
 	height: 100%;
 }
 
-
-
-
-
-
 .wish {
   width: 100%;
-  height: 50px;
+   50px;
   background-color: #fff;
   color: #01204d;
   padding: 2% 0 0 2%;
   background: url("../images/pix.png")repeat;
   position: absolute;
-	top: 0px;
-  
+	top: 0px;	 
 }
-
-.wish h4{color:#01204d; }
-
+.insideStatusOpen + .cuboGaleria .gallery .wish{
+height:100%;
+}
+.wish h4{
+color:#01204d;
+opacity:1;
+}
+.insideStatusOpen + .cuboGaleria .gallery .wish h4{
+	opacity:0;
+}
 .count {
   width: 100%;
   display: inline-block;
   height: 45px;
   background-color: #fff;
-  margin: 94% 0 0 0;
   background: url("../images/pix.png")repeat;
   position:absolute;
   bottom:0;
@@ -418,7 +502,9 @@ width: 0%;
   padding: 0 0 0 3%;
   text-shadow: 8px -4px 25px rgba(255, 255, 255, 1);
 }
-
+.insideStatusOpen + .cuboGaleria .gallery .count{
+	background:none;
+}
 
 .count a {
   float: right;
@@ -430,6 +516,16 @@ width: 0%;
   padding: 0 3% 0 0;
   color:#01204d;
   font-family: 'akzidenz-cond', impact, arial, sans-serif;
+  
+}
+.count a h5{
+	margin: 0px;
+display: inline-block;
+color: #01204D;
+opacity:1;
+}
+.insideStatusOpen + .cuboGaleria .gallery .count a h5{
+	opacity:0;
 }
 .count span {
 color:#005192;
@@ -440,7 +536,16 @@ color:#005192;
 	text-shadow: 8px -4px 25px rgba(255, 255, 255, 1);
 }
 
-
+.vertodoBTN{
+	font-family: 'akzidenz-cond', impact, arial, sans-serif;
+	color: #fff;
+	letter-spacing: 0.1rem;
+	padding:0.5rem 2rem 0.3rem;
+	-webkit-box-shadow:2px 4px 3px 0 rgba(0,0,0,0.45);
+	box-shadow:2px 4px 3px 0 rgba(0,0,0,0.45);
+	text-shadow: 0 3px 3px #001421;
+	font-size:2rem;
+	}
 /*------------------------ Footer -----------------------*/
 footer {
 	bottom: 0;
