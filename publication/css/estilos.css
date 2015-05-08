@@ -71,8 +71,16 @@ p, label {
 -webkit-transition: all 0.3s ease;
 -moz-transition: all 0.3s ease;
 -ms-transition: all 0.3s ease;
--o-transition: all 0.3s eas;
+-o-transition: all 0.3s ease;
 transition: all 0.3s ease;
+
+}
+.trans2{
+-webkit-transition:  width  0.3s ease;
+-moz-transition:  width  0.3s ease;
+-ms-transition:  width  0.3s ease;
+-o-transition:  width  0.3s ease;
+transition:  width 0.3s ease;
 
 }
 /************* Color Gradients***********/
@@ -188,31 +196,95 @@ background: linear-gradient(135deg, #05122e 0%,#105fa9 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05122e', endColorstr='#105fa9',GradientType=1 );
 }
 .effect-airbnb .container{
-	opacity:1;}
+	opacity:1;
+}
 /*---------------------------------- Menu outside--------------------------------------*/
 .menuHeader{
-		position:absolute;}
-.menuHeader .showMenu{
-	color: #FFF;
-display: block;
-height: 2.5rem;
-padding: 0px;
-position: relative;
-text-indent: 1.94444rem;
-transform: translate3d(0px, 0px, 0px);
-width: 2.5rem;
+	position:absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align:right;
+	margin: 0.2rem auto 0;
 }
-.menuHeader .showMenu span:after{
+.menuHeader .menuBTN{
+	background: none;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align:middle;
+  position: relative;
+}
+.menuHeader .menuBTN:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.menuHeader .menuBTN span{
+	position:absolute;
+	top: 0;
+	bottom: 0;
+	left:32%;
+	}
+.menuHeader .menuBTN span:after{
 	content: "";
-	display: block;
-	height: 0px;
-	position: absolute;
-	top: 50%;
-	margin-top: -0.44444rem;
-	left: 0.80556rem;
-	box-shadow: 0px 0px 0px 1px #FFF, 0px 7px 0px 1px #FFF, 0px 14px 0px 1px #FFF;
-	width: 0.88889rem;
+display: block;
+height: 0px;
+position: absolute;
+top: 50%;
+margin-top: -0.44444rem;
+left: 0;
+box-shadow: 0px 0px 0px 1px #FFF, 0px 7px 0px 1px #FFF, 0px 14px 0px 1px #FFF;
+width: 0.88889rem;
 }
+.userTool{
+	display: inline-block;
+	margin: 0 1rem;
+}
+.userTool .userThumbnail{
+overflow: hidden;
+display: inline-block;
+vertical-align: middle;
+border-radius: 50%;
+}
+.minThumbnail{
+	width: 35px;
+height: 35px;
+}
+.userTool .userName{
+	vertical-align: middle;
+	font-family: 'robotoregular';
+	color: #fff;
+	line-height: 1.4rem;
+	margin: 0 0.4rem;
+}
+.userTool .userName:hover{
+	color: #0093D9;
+}
+/*---------------------------------- logg in Wrapper -------------------------------*/
+.logginWrapper{
+	width:100%;
+	background-color: #01214D;
+	text-align: center;
+	padding: 1rem;
+}
+.connectMin{
+	display:inline-block;
+	width:195px;
+	height:38px;
+	background:none;
+	background-image:url(../images/elementos.png);
+	margin:0;
+	vertical-align:middle;
+}
+.facebook.connectMin{
+	background-position:-148px -1px;}
+.twitter.connectMin{
+	background-position:-148px -76px;}
+	.facebook.connectMin:hover{
+	background-position:-148px -38px;
+	background-color:transparent;}
+.twitter.connectMin:hover{
+	background-position:-148px -113px;
+	background-color:transparent;}
 /*---------------------------------- Validador De Edad -----------------------------*/
 .beerSmoke {
 	position: fixed;
@@ -425,23 +497,40 @@ position: absolute;
 margin-left: 33%;
 width: 0%;
 overflow: hidden;
+opacity:0;
 }
 .insideStatusOpen{
 	width:67%;
 	padding:1rem;
+	opacity:1;
 }
 
+
 .insideStatus .textStatus{
-	margin-top: 5%;
+	margin-top: 0%;
+	display:none;
+	opacity:0;
 	}
 .insideStatus .textStatus *{
 	margin-bottom:1rem;
 }
+
 .insideStatus nav{
 	position:absolute;
 	bottom:0;
 	width:95%;
+	display:none;
+	opacity:0;
 	}
+.insideStatusOpen .textStatus{
+	margin-top: 5%;
+	display: block !important;
+	opacity:1 !important;
+}
+.insideStatusOpen nav{
+	display: block !important;
+	opacity:1 !important;
+}
 .insideStatus nav button{
 	font-family: 'akzidenz-cond', impact, arial, sans-serif;
 	color: #fff;
@@ -507,9 +596,10 @@ overflow: hidden;
 
 .cuboGaleria .gallery{ 
 	width: 100%;
-	height: 350px;
+	/*height: 350px;*/
 	position: relative;
 	overflow:hidden;
+	padding-bottom:100%
 }
 
 .cuboGaleria .gallery .userGaleryimg{
@@ -541,8 +631,24 @@ height:100%;
 color:#01204d;
 opacity:1;
 }
+
 .insideStatusOpen + .cuboGaleria .gallery .wish h4{
 	opacity:0;
+}
+.closeX{
+	display: block;
+	height: 33px;
+width: 33px;
+background-image: url("../images/elementos.png");
+background-position: -103px -104px;
+
+position: absolute;
+top: 6px;
+right: 6px;
+opacity:0;
+}
+.insideStatusOpen + .cuboGaleria .gallery .wish .closeX{
+	opacity:1;
 }
 .count {
   width: 100%;

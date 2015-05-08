@@ -9,7 +9,7 @@ $(document).ready(function(){
            $(".desp2").toggle( "slow", "linear" );
        });
       
-
+/*
 	   $(".statusXPUser").click(function(){
 		   var location = $(this).attr("data-expand");
 		   
@@ -33,5 +33,19 @@ $(document).ready(function(){
 			 
 		   
 		   });
+*/
+
+	$(".userGaleryimg").click(function(){
+		var $padre = $(this).parent().parent().parent();
+		$(".statusXPUser").removeClass('showStatusbar');
+		$(".insideStatus").removeClass('insideStatusOpen');
+		$padre.addClass('showStatusbar');
+		$padre.find('.insideStatus').addClass('insideStatusOpen');
+
+	});
+	$(".closeX").click(function(){
+		$(".statusXPUser").removeClass('showStatusbar');
+		$(".insideStatus").removeClass('insideStatusOpen');
+	});
 	   
 });
