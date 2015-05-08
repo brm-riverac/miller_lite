@@ -184,20 +184,7 @@ background: -ms-linear-gradient(-45deg, #05122e 0%,#105fa9 100%);
 background: linear-gradient(135deg, #05122e 0%,#105fa9 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05122e', endColorstr='#105fa9',GradientType=1 );
 }
-/*---------------------------------- Menu Inside--------------------------------------*/
-.effect-airbnb {
-	background: #05122e;
-background: -moz-linear-gradient(-45deg, #05122e 0%, #105fa9 100%);
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#05122e), color-stop(100%,#105fa9));
-background: -webkit-linear-gradient(-45deg, #05122e 0%,#105fa9 100%);
-background: -o-linear-gradient(-45deg, #05122e 0%,#105fa9 100%);
-background: -ms-linear-gradient(-45deg, #05122e 0%,#105fa9 100%);
-background: linear-gradient(135deg, #05122e 0%,#105fa9 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05122e', endColorstr='#105fa9',GradientType=1 );
-}
-.effect-airbnb .container{
-	opacity:1;
-}
+
 /*---------------------------------- Menu outside--------------------------------------*/
 .menuHeader{
 	position:absolute;
@@ -206,7 +193,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05122e', end
 	margin: auto;
 	text-align:right;
 	margin: 0.2rem auto 0;
-<<<<<<< HEAD
 }
 .menuHeader .menuBTN{
 	background: none;
@@ -219,20 +205,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05122e', end
 .menuHeader .menuBTN:hover{
 	background-color: rgba(255, 255, 255, 0.2);
 }
-=======
-}
-.menuHeader .menuBTN{
-	background: none;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  vertical-align:middle;
-  position: relative;
-}
-.menuHeader .menuBTN:hover{
-	background-color: rgba(255, 255, 255, 0.2);
-}
->>>>>>> 5168354cb36f0c593c47f29cef9acb4bfc905525
 .menuHeader .menuBTN span{
 	position:absolute;
 	top: 0;
@@ -273,8 +245,78 @@ height: 35px;
 }
 .userTool .userName:hover{
 	color: #0093D9;
-<<<<<<< HEAD
-=======
+}
+/*---------------------------------- Menu Inside--------------------------------------*/
+.effect-airbnb {
+	background: #05122e;
+background: -moz-linear-gradient(-45deg, #05122e 0%, #105fa9 100%);
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#05122e), color-stop(100%,#105fa9));
+background: -webkit-linear-gradient(-45deg, #05122e 0%,#105fa9 100%);
+background: -o-linear-gradient(-45deg, #05122e 0%,#105fa9 100%);
+background: -ms-linear-gradient(-45deg, #05122e 0%,#105fa9 100%);
+background: linear-gradient(135deg, #05122e 0%,#105fa9 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05122e', endColorstr='#105fa9',GradientType=1 );
+}
+.effect-airbnb .container{
+	opacity:1;
+}
+.outer-nav{
+	width: 100%;
+}
+.outer-nav.left {
+    width: 25%;
+	background-color: #F00;
+}
+.outer-nav{
+	font-family: 'akzidenz-cond', impact, arial, sans-serif;
+	color: #fff;
+	letter-spacing: 0.1rem;
+}
+.outer-nav .menuBTN{
+	padding-left: 10%;
+	margin:0;
+}
+.outer-nav .menuBTN:hover{
+	color:#fff;
+	background: -moz-linear-gradient(-45deg, rgba(0,81,146,1) 0%, rgba(0,81,146,0) 40%, rgba(0,81,146,0) 100%);
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,81,146,1)), color-stop(40%,rgba(0,81,146,0)), color-stop(100%,rgba(0,81,146,0)));
+background: -webkit-linear-gradient(-45deg, rgba(0,81,146,1) 0%,rgba(0,81,146,0) 40%,rgba(0,81,146,0) 100%);
+background: -o-linear-gradient(-45deg, rgba(0,81,146,1) 0%,rgba(0,81,146,0) 40%,rgba(0,81,146,0) 100%);
+background: -ms-linear-gradient(-45deg, rgba(0,81,146,1) 0%,rgba(0,81,146,0) 40%,rgba(0,81,146,0) 100%);
+background: linear-gradient(135deg, rgba(0,81,146,1) 0%,rgba(0,81,146,0) 40%,rgba(0,81,146,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005192', endColorstr='#00005192',GradientType=1 );
+	
+}
+.outer-nav .closeX2{
+	padding-left: 10%;
+	margin:0;
+	height: 33px;
+width: 33px;
+	background-image: url("../images/elementos.png");
+background-position: -55px -104px;
+margin-left: 10%;
+padding: 0;
+margin-top: 2%;
+}
+.outer-nav .userTool{
+	padding-left: 10%;
+	white-space:nowrap;
+	width: 100%;
+	margin: 0px;
+	font-family: 'akzidenz-cond', impact, arial, sans-serif;
+	color: #fff;
+	letter-spacing: 0.1rem;
+}
+.outer-nav .userTool .userThumbnail{
+	display:inline-block;
+	margin: 0 0 0.5rem;
+	width: 60px;
+	height: 60px;
+}
+.outer-nav .userTool .userName{
+	 margin:0;
+	 font-size: 1.5rem;
+	 display: inline-block;
 }
 
 /*---------------------------------- logg in Wrapper -------------------------------*/
@@ -309,34 +351,8 @@ height: 35px;
 }
 .showLogin .connectMin{
 	display:inline-block;
->>>>>>> 5168354cb36f0c593c47f29cef9acb4bfc905525
 }
-/*---------------------------------- logg in Wrapper -------------------------------*/
-.logginWrapper{
-	width:100%;
-	background-color: #01214D;
-	text-align: center;
-	padding: 1rem;
-}
-.connectMin{
-	display:inline-block;
-	width:195px;
-	height:38px;
-	background:none;
-	background-image:url(../images/elementos.png);
-	margin:0;
-	vertical-align:middle;
-}
-.facebook.connectMin{
-	background-position:-148px -1px;}
-.twitter.connectMin{
-	background-position:-148px -76px;}
-	.facebook.connectMin:hover{
-	background-position:-148px -38px;
-	background-color:transparent;}
-.twitter.connectMin:hover{
-	background-position:-148px -113px;
-	background-color:transparent;}
+
 /*---------------------------------- Validador De Edad -----------------------------*/
 .beerSmoke {
 	position: fixed;
@@ -560,8 +576,6 @@ opacity:0;
 	padding:1rem;
 	opacity:1;
 }
-
-
 .insideStatus .textStatus{
 	margin-top: 0%;
 	display:none;
@@ -570,7 +584,6 @@ opacity:0;
 .insideStatus .textStatus *{
 	margin-bottom:1rem;
 }
-
 .insideStatus nav{
 	position:absolute;
 	bottom:0;
@@ -597,7 +610,6 @@ opacity:0;
 	font-size:2rem;
 	text-shadow: 0 3px 3px #001421;
 }
-
 .insideStatus nav .statusShare{
 	float: right;
 }
@@ -625,7 +637,6 @@ opacity:0;
 }
 .insideStatus nav .statusShare .facebookShare:hover{
 	background-position:-26px -45px;
-	
 }
 .insideStatus nav .statusShare .twitterShare:hover{
 	background-position:-79px -45px;
@@ -647,9 +658,7 @@ opacity:0;
 	content: '';
 	display: inline-block;
 	width: 100%;
-
 }
-
 .cuboGaleria .gallery{ 
 	width: 100%;
 	/*height: 350px;*/
@@ -657,7 +666,6 @@ opacity:0;
 	overflow:hidden;
 	padding-bottom:100%
 }
-
 .cuboGaleria .gallery .userGaleryimg{
 	position: absolute;
 	top: 0px;
@@ -669,7 +677,6 @@ opacity:0;
 	width: 100%;
 	height: 100%;
 }
-
 .wish {
   width: 100%;
   background-color: #fff;
@@ -677,7 +684,7 @@ opacity:0;
   padding: 2% 0 0 2%;
   background: url("../images/pix.png")repeat;
   position: absolute;
-	top: 0px;	 
+  top: 0px;	 
 }
 .insideStatusOpen + .cuboGaleria .gallery .wish{
 height:100%;
@@ -686,7 +693,6 @@ height:100%;
 color:#01204d;
 opacity:1;
 }
-
 .insideStatusOpen + .cuboGaleria .gallery .wish h4{
 	opacity:0;
 }
@@ -696,7 +702,6 @@ opacity:1;
 width: 33px;
 background-image: url("../images/elementos.png");
 background-position: -103px -104px;
-
 position: absolute;
 top: 6px;
 right: 6px;
@@ -714,7 +719,6 @@ opacity:0;
   position:absolute;
   bottom:0;
 }
-
 .numb {
   float: left;
   width: 50%;
@@ -729,7 +733,6 @@ opacity:0;
 .insideStatusOpen + .cuboGaleria .gallery .count{
 	background:none;
 }
-
 .count a {
   float: right;
   width: 50%;
@@ -740,7 +743,6 @@ opacity:0;
   padding: 0 3% 0 0;
   color:#01204d;
   font-family: 'akzidenz-cond', impact, arial, sans-serif;
-  
 }
 .count a h5{
 	margin: 0px;
