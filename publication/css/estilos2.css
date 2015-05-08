@@ -61,7 +61,8 @@
 
 
 /*desplegables barra*/
-.desp1{width:100%; height: 300px; background-color:#ccc; display: none; }
+.desp1{width:100%; height: 300px; background-color:#0092d9; display: none; }
+.desp1color{background-color:#0092d9;}
 .desp2{width:100%; height: 300px; background-color:#ccc; display: none; }
 
 
