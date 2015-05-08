@@ -8,6 +8,15 @@ $(document).ready(function(){
        $(".tog2").click(function(){
            $(".desp2").toggle( "slow", "linear" );
        });
+	   
+	    $(".logginBTN").click(function(){
+			if($(".logginWrapper").hasClass("showLogin"))
+			{
+           		$(".logginWrapper").removeClass( "showLogin" );
+			}else{
+				$(".logginWrapper").addClass( "showLogin" );
+			}	
+       });
       
 /*
 	   $(".statusXPUser").click(function(){
