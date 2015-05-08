@@ -3,5 +3,5 @@
           }
 
           $(document).ready(function() {
-              $(".trigger2").click(function(){$(".caja2").slideToggle();});
+              $(".triggerMenuBtn2").click(function(){$(".caja2").slideToggle();});
           });
