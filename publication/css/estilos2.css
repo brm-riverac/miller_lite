@@ -62,7 +62,7 @@
 
 /*desplegables barra*/
 .desp1{width:100%; height: 500px; background-color:transparent; display: none;padding: 2% 0 0 0 }
-.desp2{width:100%; height: 800px; background-color:transparent; display: none; }
+.desp2{width:100%; height: 800px; background-color:transparent; display: none;padding: 1.5% 0 0 0}
 .desp1color{background-color:transparent;}
 .desp2color{background-color:transparent;}
 .desp1 h3{text-align: center; line-height: 0; margin: 0; padding: 0.5% 0 0 0;}
@@ -113,27 +113,25 @@ body {
 }
 /*form styles*/
 #msform {
-  width: 400px;
-  margin: 50px auto;
+  width: 100%;
+  margin: 0;
   text-align: center;
   position: relative;
 }
+
 #msform fieldset {
-  background: white;
+  background: transparent;
   border: 0 none;
   border-radius: 3px;
-  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-  padding: 20px 30px;
-  
+  /* box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4); */
+  /* padding: 20px 30px; */
   box-sizing: border-box;
-  width: 80%;
-  margin: 0 10%;
-  
-  /*stacking fieldsets above each other*/
+  width: 100%;
+  margin: 0 0 0 0%;
   position: absolute;
 }
-/*Hide all except first fieldset*/
-#msform fieldset:not(:first-of-type) {
+
+  #msform fieldset:not(:first-of-type) {
   display: none;
 }
 /*inputs*/
@@ -165,10 +163,11 @@ body {
 }
 /*headings*/
 .fs-title {
-  font-size: 15px;
+  font-size: 1rem;
   text-transform: uppercase;
-  color: #2C3E50;
-  margin-bottom: 10px;
+  color: #fff;
+  margin-bottom: 13%;
+  line-height: 1.20rem;
 }
 .fs-subtitle {
   font-weight: normal;
@@ -195,15 +194,24 @@ body {
 #progressbar li:before {
   content: counter(step);
   counter-increment: step;
-  width: 20px;
-  line-height: 20px;
+  width: 91%;
+  height: 40px;
+  line-height: 2.5rem;
   display: block;
-  font-size: 10px;
-  color: #333;
-  background: white;
+  font-size: 1.5rem;
+  color: #005192;
+  background:#03224e;
   border-radius: 3px;
   margin: 0 auto 5px auto;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.54);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.54);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.54);
+
+
+
+
 }
+
 /*progressbar connectors*/
 #progressbar li:after {
   content: '';
@@ -221,9 +229,71 @@ body {
 }
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
-#progressbar li.active:before,  #progressbar li.active:after{
-  background: #27AE60;
+#progressbar li.active:before, #progressbar li.active:after {
+  background: #D0043C;
   color: white;
+  width: 91%;
+  height: 40px;
+}
+
+#msform input, #msform textarea {
+  padding: 15px;
+  border: 0px solid #1cb1f9;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  font-size: 13px;
+  background-color: #1cb1f9;
+}
+
+select {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-color: #1cb1f9;
+  border-radius: 0;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…J2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+);
+  background-position: 100% center;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 0px;
+  border-color: #cccccc;
+  color: #2C3E50;
+  font-family: inherit;
+  font-size: 0.875rem;
+  line-height: normal;
+  padding: 0.5rem;
+  border-radius: 0;
+  height: 2.3125rem;
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  background-color: #075588;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: #075588;
+  display: block;
+  font-family: inherit;
+  font-size: 0.875rem;
+  height: 2.3125rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color 0.15s linear, background 0.15s linear;
+  -moz-transition: border-color 0.15s linear, background 0.15s linear;
+  -ms-transition: border-color 0.15s linear, background 0.15s linear;
+  -o-transition: border-color 0.15s linear, background 0.15s linear;
+  transition: border-color 0.15s linear, background 0.15s linear;
 }
 
 
