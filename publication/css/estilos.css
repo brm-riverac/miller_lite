@@ -297,6 +297,7 @@ box-shadow:inset 0 3px 5px 0 rgba(0,70,132,0.75), 0 10px 20px 0 rgba(0,0,0,0.45)
 	width:45%;
 	vertical-align: middle;
 	text-align: center;
+	margin-top: 1%
 }
 .midBar .row nav .participarBTN{
 	font-family: 'akzidenz-cond', impact, arial, sans-serif;
@@ -325,7 +326,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#98002a', end
 .midBar .row nav .comoParticiparBTN{
 	display: inline-block;
 	vertical-align: middle;
-	padding: 0.5rem 0.3rem 0.2rem;
+	-webkit-box-shadow: 0px 3px 3px 0px rgba(8, 74, 108, 1);
+     box-shadow: 0px 3px 3px 0px rgba(8, 74, 108, 1);
+	
 	
 }
 .midBar .row nav .comoParticiparBTN:hover{
