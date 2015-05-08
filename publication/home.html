@@ -41,7 +41,7 @@
     	<p><button id="showMenu"><span></span></button></p></nav>
     <div class="bg-head">
     <div class="ring">
-    <header class="row head_ml">
+    <header class="row head_ml triggerMenuBtn2">
     <!-- parte1 -->
     <div class="small-12 medium-10 medium-centered large-5 large-offset-1 large-uncentered columns">
      <div class="brd-cmp">
@@ -113,8 +113,8 @@
        		</div>
        		<nav>
 
-    <button  class="tog2 participarBTN redGrad  triggerMenuBtn" onclick="scrollWin()">¡Quiero participar!</button>
-    <button  class="tog1 comoParticiparBTN blueGrad display_info" onclick="scrollWin()"><img src="images/iconoEngrane.png"/></button>
+    <button  class="tog2 participarBTN redGrad  display_info triggerMenuBtn" onclick="scrollWin()">¡Quiero participar!</button>
+    <button  class="tog1 comoParticiparBTN blueGrad display_info2 " onclick="scrollWin2()"><img src="images/iconoEngrane.png"/></button>
 
         	</nav>
             
@@ -134,25 +134,127 @@
 <form id="msform">
   <!-- progressbar -->
   <ul id="progressbar">
-    <li class="active">Account Setup</li>
-    <li>Social Profiles</li>
-    <li>Personal Details</li>
+    <li class="active">PASO 1</li>
+    <li>PASO 2</li>
+    <li>PASO 3</li>
   </ul>
   <!-- fieldsets -->
   <fieldset>
-    <h2 class="fs-title">Create your account</h2>
-    <h3 class="fs-subtitle">This is step 1</h3>
-    <input type="text" name="email" placeholder="Email" />
-    <input type="password" name="pass" placeholder="Password" />
-    <input type="password" name="cpass" placeholder="Confirm Password" />
+    <p class="fs-title">Selecciona la red social con la que quieres crear tu perfil para participar.</p>
+    <a href="#" class="button expand">Facebook Connect</a>
+    <a href="#" class="button expand">Tweeter Connect</a>
+    
     <input type="button" name="next" class="next action-button" value="Next" />
   </fieldset>
   <fieldset>
-    <h2 class="fs-title">Social Profiles</h2>
-    <h3 class="fs-subtitle">Your presence on the social network</h3>
-    <input type="text" name="twitter" placeholder="Twitter" />
-    <input type="text" name="facebook" placeholder="Facebook" />
-    <input type="text" name="gplus" placeholder="Google Plus" />
+    <div class="row">
+    <div class="large-12 columns">
+      <label>
+        <input type="text" placeholder="Nombre" />
+      </label>
+    </div>
+     <div class="large-12 columns">
+      <label>
+        <input type="text" placeholder="Apellido" />
+      </label>
+    </div>
+  
+
+
+
+  </div>
+  <div class="row">
+    <div class="large-4 columns">
+       <label>
+         <select>
+          <option value="husker">Día</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </label>
+    </div>
+    <div class="large-4 columns">
+      <label>
+         <select>
+          <option value="husker">Mes</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </label>
+    </div>
+    <div class="large-4 columns">
+      <label>
+         <select>
+          <option value="husker">Año</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </label>
+    </div>
+  </div>
+   
+   <div class="row">
+    <div class="large-12 columns">
+      <label>
+        <input type="text" placeholder="Número de Cédula" />
+      </label>
+    </div>
+     <div class="large-12 columns">
+      <label>
+        <input type="text" placeholder="Correo Electrónico" />
+      </label>
+    </div>
+      <div class="large-12 columns">
+      <label>
+        <input type="text" placeholder="Celular" />
+      </label>
+    </div>
+      <div class="large-12 columns">
+      <label>
+        <input type="text" placeholder="País" />
+      </label>
+    </div>
+      <div class="large-12 columns">
+      <label>
+        <input type="text" placeholder="Ciudad" />
+      </label>
+    </div>
+
+    <div class="row">
+    <div class="large-6 columns">
+      <label></label>
+      <input type="radio" name="Hombre" value="Red" id="HombreRed"><label for="pokemonRed">Hombre</label>
+     
+    </div>
+   <div class="large-6 columns">
+      <label></label>
+     <input type="radio" name="Mujer" value="Blue" id="MujerBlue"><label for="pokemonBlue">Mujer</label>
+    </div>
+
+
+
+
+
+
+   </div>
+  
+  <div class="row">
+   <div class="large-12 columns">
+      <label></label>
+      <input id="checkbox1" type="checkbox"><label for="checkbox1">Acepto <a href="#">Terminos y Condiciones</a></label>
+      <input id="checkbox2" type="checkbox"><label for="checkbox2">Acepto <a href="#">Politica de Privacidad</a></label>
+      <input id="checkbox2" type="checkbox"><label for="checkbox2">Deseo recibir Newsletters</label>
+    </div>
+   </div> 
+
+
+    
+    
+
+
     <input type="button" name="previous" class="previous action-button" value="Previous" />
     <input type="button" name="next" class="next action-button" value="Next" />
   </fieldset>
