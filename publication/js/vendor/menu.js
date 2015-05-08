@@ -41,6 +41,7 @@
 		var showMenu = document.getElementById( 'showMenu' ),
 			perspectiveWrapper = document.getElementById( 'perspective' ),
 			container = perspectiveWrapper.querySelector( '.container' ),
+			cerrar = perspectiveWrapper.querySelector( '.closeX2' ),
 			contentWrapper = container.querySelector( '.pageWrapper' );
 
 		showMenu.addEventListener( clickevent, function( ev ) {
@@ -58,6 +59,26 @@
 		});
 
 		container.addEventListener( clickevent, function( ev ) {
+			if( classie.has( perspectiveWrapper, 'animate') ) {
+				var onEndTransFn = function( ev ) {
+					if( support && ( ev.target.className !== 'container' || ev.propertyName.indexOf( 'transform' ) == -1 ) ) return;
+					this.removeEventListener( transEndEventName, onEndTransFn );
+					classie.remove( perspectiveWrapper, 'modalview' );
+					// mac chrome issue:
+					document.body.scrollTop = document.documentElement.scrollTop = docscroll;
+					// change top of contentWrapper
+					contentWrapper.style.top = '0px';
+				};
+				if( support ) {
+					perspectiveWrapper.addEventListener( transEndEventName, onEndTransFn );
+				}
+				else {
+					onEndTransFn.call();
+				}
+				classie.remove( perspectiveWrapper, 'animate' );
+			}
+		});
+		cerrar.addEventListener( clickevent, function( ev ) {
 			if( classie.has( perspectiveWrapper, 'animate') ) {
 				var onEndTransFn = function( ev ) {
 					if( support && ( ev.target.className !== 'container' || ev.propertyName.indexOf( 'transform' ) == -1 ) ) return;
