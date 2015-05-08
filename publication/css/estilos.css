@@ -184,20 +184,7 @@ background: -ms-linear-gradient(-45deg, #05122e 0%,#105fa9 100%);
 background: linear-gradient(135deg, #05122e 0%,#105fa9 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05122e', endColorstr='#105fa9',GradientType=1 );
 }
-/*---------------------------------- Menu Inside--------------------------------------*/
-.effect-airbnb {
-	background: #05122e;
-background: -moz-linear-gradient(-45deg, #05122e 0%, #105fa9 100%);
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#05122e), color-stop(100%,#105fa9));
-background: -webkit-linear-gradient(-45deg, #05122e 0%,#105fa9 100%);
-background: -o-linear-gradient(-45deg, #05122e 0%,#105fa9 100%);
-background: -ms-linear-gradient(-45deg, #05122e 0%,#105fa9 100%);
-background: linear-gradient(135deg, #05122e 0%,#105fa9 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05122e', endColorstr='#105fa9',GradientType=1 );
-}
-.effect-airbnb .container{
-	opacity:1;
-}
+
 /*---------------------------------- Menu outside--------------------------------------*/
 .menuHeader{
 	position:absolute;
@@ -258,6 +245,78 @@ height: 35px;
 }
 .userTool .userName:hover{
 	color: #0093D9;
+}
+/*---------------------------------- Menu Inside--------------------------------------*/
+.effect-airbnb {
+	background: #05122e;
+background: -moz-linear-gradient(-45deg, #05122e 0%, #105fa9 100%);
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#05122e), color-stop(100%,#105fa9));
+background: -webkit-linear-gradient(-45deg, #05122e 0%,#105fa9 100%);
+background: -o-linear-gradient(-45deg, #05122e 0%,#105fa9 100%);
+background: -ms-linear-gradient(-45deg, #05122e 0%,#105fa9 100%);
+background: linear-gradient(135deg, #05122e 0%,#105fa9 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05122e', endColorstr='#105fa9',GradientType=1 );
+}
+.effect-airbnb .container{
+	opacity:1;
+}
+.outer-nav{
+	width: 100%;
+}
+.outer-nav.left {
+    width: 25%;
+	background-color: #F00;
+}
+.outer-nav{
+	font-family: 'akzidenz-cond', impact, arial, sans-serif;
+	color: #fff;
+	letter-spacing: 0.1rem;
+}
+.outer-nav .menuBTN{
+	padding-left: 10%;
+	margin:0;
+}
+.outer-nav .menuBTN:hover{
+	color:#fff;
+	background: -moz-linear-gradient(-45deg, rgba(0,81,146,1) 0%, rgba(0,81,146,0) 40%, rgba(0,81,146,0) 100%);
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,81,146,1)), color-stop(40%,rgba(0,81,146,0)), color-stop(100%,rgba(0,81,146,0)));
+background: -webkit-linear-gradient(-45deg, rgba(0,81,146,1) 0%,rgba(0,81,146,0) 40%,rgba(0,81,146,0) 100%);
+background: -o-linear-gradient(-45deg, rgba(0,81,146,1) 0%,rgba(0,81,146,0) 40%,rgba(0,81,146,0) 100%);
+background: -ms-linear-gradient(-45deg, rgba(0,81,146,1) 0%,rgba(0,81,146,0) 40%,rgba(0,81,146,0) 100%);
+background: linear-gradient(135deg, rgba(0,81,146,1) 0%,rgba(0,81,146,0) 40%,rgba(0,81,146,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005192', endColorstr='#00005192',GradientType=1 );
+	
+}
+.outer-nav .closeX2{
+	padding-left: 10%;
+	margin:0;
+	height: 33px;
+width: 33px;
+	background-image: url("../images/elementos.png");
+background-position: -55px -104px;
+margin-left: 10%;
+padding: 0;
+margin-top: 2%;
+}
+.outer-nav .userTool{
+	padding-left: 10%;
+	white-space:nowrap;
+	width: 100%;
+	margin: 0px;
+	font-family: 'akzidenz-cond', impact, arial, sans-serif;
+	color: #fff;
+	letter-spacing: 0.1rem;
+}
+.outer-nav .userTool .userThumbnail{
+	display:inline-block;
+	margin: 0 0 0.5rem;
+	width: 60px;
+	height: 60px;
+}
+.outer-nav .userTool .userName{
+	 margin:0;
+	 font-size: 1.5rem;
+	 display: inline-block;
 }
 
 /*---------------------------------- logg in Wrapper -------------------------------*/
