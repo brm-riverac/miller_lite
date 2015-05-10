@@ -148,9 +148,9 @@
 <form id="msform">
   <!-- progressbar -->
  <ul id="progressbar">
-    <li class="active">Elige tu Red Social</li>
-    <li>Inscríbete</li>
-    <li>Confirma</li>
+    <li class="active">ELIGE TU RED SOCIAL</li>
+    <li>INSCRÍBETE</li>
+    <li>TU HISTORIA</li>
   </ul> 
   <!-- fieldsets -->
   <fieldset>
@@ -180,6 +180,9 @@
 
   </div>
   <div class="row">
+    <div class="large-12 columns">
+    Fecha de Nacimiento
+    </div>
     <div class="large-4 columns">
        <label>
          <select>
@@ -210,8 +213,9 @@
         </select>
       </label>
     </div>
+
   </div>
-   
+   <br>
    <div class="row">
     <div class="large-6 small-12 columns">
       <label>
@@ -239,19 +243,37 @@
       </label>
     </div>
   </div>
-  
+
   <div class="row">
-    <div class="large-6 columns">
-      <label>Choose Your Favorite</label>
-      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
-      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
-    </div>
-    <div class="large-6 columns">
-      <label>Check these out</label>
-      <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+     <div class="large-12 columns">
+      <label>
+         <select>
+          <option value="hombre">SEXO</option>
+          <option value="hombre">Hombre</option>
+          <option value="mujer">Mujer</option>
+        </select>
+      </label>
     </div>
   </div>
+  <br>
+  <div class="row">
+  <div class="large-1 columns">
+    <input id="checkbox1" type="checkbox">
+  </div>
+  <div class="large-11 columns">
+    <label for="checkbox1" class="ln">Acepto <a href="#" >Terminos y Condiciones</a> </label>
+  </div>
+  </div>
+  
+   <div class="row">
+  <div class="large-1 columns">
+    <input id="checkbox1" type="checkbox">
+  </div>
+  <div class="large-11 columns">
+    <label for="checkbox1" class="ln">Acepto <a href="#">Politicas de Privacidad</a> </label>
+  </div>
+  </div>
+
 
     
 
@@ -259,13 +281,41 @@
     <input type="button" name="previous" class="previous action-button" value="Previous" />
     <input type="button" name="next" class="next action-button" value="Next" />
   </fieldset>
+  
+
+
+
   <fieldset>
-    <h2 class="fs-title">Personal Details</h2>
-    <h3 class="fs-subtitle">We will never sell it</h3>
+    
+    <p class="fs-title">Selecciona la red social con la que quieres crear tu perfil para participar.</p>
+    
+    <p>Titulo del Plan (Máximo 25 caracteres) </p>
+    <label>
     <input type="text" name="fname" placeholder="First Name" />
-    <input type="text" name="lname" placeholder="Last Name" />
-    <input type="text" name="phone" placeholder="Phone" />
+    </label>
+    
+    
+    <p>Cuéntanos lo que quieres hacer.(máximo 140 caracteres)</p>
+    <label></label>
     <textarea name="address" placeholder="Address"></textarea>
+    </label>
+    
+    <label>
+    <div class="custom-file-upload">
+    <!--<label for="file">File: </label>--> 
+    <input type="file" id="file" name="myfiles[]" multiple />
+    </div>
+    </label>
+
+
+
+
+    
+
+   
+
+
+
     <input type="button" name="previous" class="previous action-button" value="Previous" />
     <input type="submit" name="submit" class="submit action-button" value="Submit" />
   </fieldset>
@@ -451,8 +501,10 @@
 
 <section class="row buscadorWrapper">
 	<div class="large-6 columns">
-    	<input class="buscador" type="text" placeholder="Hex Value">
-        <a href="#" class="button prefix"></a>
+    	<form action="/search.html" class="search-wrapper cf">
+       <input type="text" placeholder="Ingresa lo que quieres Buscar..." required="">
+       <button type="submit"><p><img src="svg/search_a.svg" class="lup" title="Buscar" alt="Buscar"></p></button>
+    </form>
     </div>
 </section>
 
@@ -538,9 +590,9 @@
                 <a class="closeX trans1"></a>
 	        </div>  
  			<div class="count">
-   		     	<p class="numb">99999</p>
-    	        <a href="">VOTAR <span>&#9733; <!-- &#9734; --></span></a>
-			</div>
+            <p class="numb">99999</p>
+              <a href="">VOTAR <span>&#9733; <!-- &#9734; --></span></a>
+      </div>
 		</div>
 	</div>
 </div>
@@ -561,7 +613,8 @@
         <nav>
         <button class="blueGradBTN">Votar</button><div class="statusShare"><h6>Compartir:</h6><a class="facebookShare"></a><a class="twitterShare"></a></div></nav>
     </div>
-	<div class="cuboGaleria">
+	
+  <div class="cuboGaleria">
  		<div class="gallery trans1">
  	  	 	<a class="userGaleryimg" ><img  src="images/galeria/miller3.jpg"/></a>
   			<div class="wish trans1">
